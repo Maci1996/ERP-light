@@ -1,0 +1,4 @@
+//com.springsource.config.ui.prefs.activePageIndex\:/ERP-light/WebContent/WEB-INF/erp-light-servlet.template.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ERP-light/WebContent/WEB-INF/erp-light-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ERP-light/target/ERP-light-0.0.1-SNAPSHOT/WEB-INF/erp-light-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+eclipse.preferences.version=1

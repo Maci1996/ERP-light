@@ -1,0 +1,13 @@
+
+arg0=--batch-file=--stop
+arg1=stop
+arg2=ERPLibertyServer
+exit=1
+
+                 Java home:  C:\Program Files\Java\jdk1.8.0_251\jre
+              Install root:  D:/Liberty-Profile-V8.5.5.4-Runtime/
+          System libraries:  D:/Liberty-Profile-V8.5.5.4-Runtime/lib/
+                 User root:  D:/Liberty-Profile-V8.5.5.4-Runtime/usr/
+             Server config:  D:/Liberty-Profile-V8.5.5.4-Runtime/usr/servers/ERPLibertyServer/
+             Server output:  D:/Liberty-Profile-V8.5.5.4-Runtime/usr/servers/ERPLibertyServer/
+

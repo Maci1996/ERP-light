@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Warenverwaltung</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-datepicker3.min.css" rel="stylesheet">
+	<!-- Stylesheet -->
+	<link href="../css/warenverwaltung.css" rel="stylesheet">
+	<link href="../css/globalStyles.css" rel="stylesheet">
+	<link href="../css/loadingspinner.css" rel="stylesheet">
+	<link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico' >
+</head>
+<body>
+	<header id="pageheader">
+	</header>
+	
+	<div class="container-fluid">
+		<div class="row" id="top"></div>
+	
+		<div class="row" id="header">
+			<div class="col-md-12">			
+				<h2>Warenverwaltung</h2>
+				
+				<!-- Tabs -->
+				<ul class="nav nav-tabs">
+					<li role="presentation" class="helpHotspot" data-helptext="&Uuml;bersicht aller Wareneing&auml;nge">
+						<a href="warenverwaltung_wareneingang.html">Wareneingang</a></li>
+					<li role="presentation" class="helpHotspot" data-helptext="&Uuml;bersicht aller Warenausg&auml;nge">
+						<a href="warenverwaltung_warenausgang.html">Warenausgang</a></li>
+					<li role="presentation" class="helpHotspot" data-helptext="&Uuml;bersicht aller Lieferlisten">
+						<a href="warenverwaltung_lieferlisten.html">Lieferlisten</a></li>
+					<li role="presentation" class="active" style="width: 220px;">
+						<a href="javascript:;" ><span id="tabtext">Bearbeite Wareneingang</span>
+							<button onclick="location.href='warenverwaltung_wareneingang.html'" class='close closeTab' id='btn_close' type='button' style="margin-left: 5px;">×</button>
+						</a></li>
+					<li role="presentation" class="hidden">
+						<a href="warenverwaltung_neuedisposition.html">Neuer Warenausgang</a></li>
+					<li role="presentation" class="hidden">
+						<a href="warenverwaltung_neuelieferliste.html">Neue Lieferliste</a></li>
+				</ul>
+				
+			</div>		  
+		</div>
+		
+		<div class="row" id="body">
+			<div class="col-md-12">				
+				
+				<div class="tab-content">		
+					
+					<div class="tab-pane active" id="tab4">
+						
+						<div class="row" style="margin-top: 5px;">
+							<div class="col-md-12">
+									<div class="col-md-5">
+										<form class="form-inline">
+  										<div class="form-group helpHotspot" data-helptext="Hier kann ein Lieferant f&uuml;r den Wareneingang gew&auml;hlt werden.">
+											<label id="label_lieferant">Lieferant</label>
+											<span id="tbx_deliverer_popover" data-html="true" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="">
+												<input type="text" class="form-control" id="tbx_deliverer" placeholder="Lieferant" style="width: 330px;" disabled>
+												<input type="hidden" id="tbx_orgId">
+											</span>
+											<button type="button" class="btn btn-default" id="btn_addDeliverer" ><span class="glyphicon glyphicon-search"></span></button>
+										</div>
+										</form>
+									</div>
+									<div class="col-md-3 helpHotspot">
+										<form class="form-inline">
+  										<div class="form-group helpHotspot" data-helptext="Das Datum, an dem die Lieferung durchgef&uuml;hrt wurde.">
+											<label id="label_lieferant">Lieferscheindatum</label>
+											<input type="text" class="form-control datepicker" id="tbx_date" placeholder="dd.mm.yyyy" style="width: 100px;">
+										</div>
+										</form>
+									</div>
+									<div class="col-md-4">
+										<form class="form-inline">
+  										<div class="form-group helpHotspot" data-helptext="Eine Bemerkung zu der Lieferung. Zum Beispiel: 1. von 2 Teillieferungen, ...">
+											<label id="label_lieferant">Bemerkung</label>
+											<span id="tbx_comment_popover" data-html="true" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="">
+												<input type="text" class="form-control" id="tbx_comment" placeholder="Bemerkung" style="width: 300px;" maxlength="1000">
+											</span>
+										</div>
+										</form>
+									</div>
+										
+							</div>
+						</div>
+						
+											
+						<button type="button" id="btn_new" class="btn btn-primary newposition helpHotspot" data-toggle="modal" data-target="#new"
+							data-helptext="Eine neue Position zum Wareneingang hinzuf&uuml;gen.">
+							<span class="glyphicon glyphicon-plus"></span> Neue Position</button>							
+						
+						<!-- Table -->
+						<div class="table-responsive" id="newIncomingDeliveryTable">
+							<table class="table table-hover table-striped header-fixed" id="TableHead">
+								<thead class="TableHead">
+									<tr>
+										<th style="" class="hidden">#</th>								
+										<th style="width: 15%">Bezeichnung</th>
+										<th style="width: 15%">Anzahl der VE</th>
+										<th style="width: 10%">VE</th>
+										<th style="width: 15%">Einzelgewicht der VE</th>	
+										<th style="width: 10%">MHD</th>		
+										<th style="width: 15%">Einzelpreis der VE</th>
+										<th style="width: 10%">Gesamtgewicht</th>
+										<th style="width: 10%">Gesamtpreis</th>														
+									</tr>
+								</thead>	
+								<tbody id="newIncomingDeliveryTableBody" class="searchable">
+									<!-- table rows -->
+								</tbody>
+							</table>
+						</div>
+						<!-- Table end -->
+						
+						<!-- Choose deliverer Modal -->
+						<div class="modal fade" id="chooseDelivererModal" tabindex="-1"
+							role="dialog" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">
+											<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+										</button>
+										<h4 class="modal-title">Lieferantenauswahl</h4>
+									</div>
+									<div class="modal-body">
+
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<div class="input-group suchfilter_modal">
+														<span
+															class="input-group-addon glyphicon glyphicon-search"></span>
+														<input id="filter_modal" type="text"
+															class="form-control" placeholder="Suche...">
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<div class="form-control searchable ModalDivContainer helpHotspot" id="delivererDiv"
+														data-helptext="Den gew&uuml;nschten Lieferanten mittels Klick auf die Checkbox w&auml;hlen und auf 'Speichern' klicken.">
+															<!-- deliverers are inserted by script -->
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="modal-footer">
+										<div id="newAlertFormDeliverer"></div>
+										<button type="button" class="btn btn-default"
+											data-dismiss="modal">Abbrechen</button>
+										<button type="button" id="btn_saveDeliverer" class="btn btn-primary">
+											<span class="glyphicon glyphicon-floppy-save"></span> Speichern
+										</button>
+
+									</div>
+								</div>
+								<!-- /.modal-content -->
+							</div>
+							<!-- /.modal-dialog -->
+						</div>
+						<!-- /.modal -->
+						
+						<!-- Neue Position -->
+						<div class="modal fade" id="new" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content modalPosition">
+									  <div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										<h4 class="modal-title" id="modal_title_text">Neue Position</h4>
+									  </div>
+									  <div class="modal-body">
+											<form class="form-horizontal" role="form">
+												<div class="row">
+													<input type="hidden" name="tbx_positionId" id="tbx_positionId">
+												  	<div class="form-group">
+														<label class="col-sm-4 control-label">Bezeichnung</label>
+														<div class="col-sm-4">
+															<input type="text" class="form-control" name="tbx_description" id="tbx_description" placeholder="Bezeichnung" maxlength="1024">
+														</div>
+													</div>
+												</div>
+												
+												<div class="row">
+												  	<div class="form-group">
+														<label class="col-sm-4 control-label">Anzahl der VE</label>
+														<div class="col-sm-4">
+															<input type="text" class="form-control" name="tbx_numberofpackagingunits" id="tbx_numberofpackagingunits" placeholder="Anzahl der VE" maxlength="6">
+														</div>
+													</div>
+												</div>		
+												
+												<div class="row">
+												  	<div class="form-group">
+														<label class="col-sm-4 control-label">Art der VE</label>
+														<div class="col-sm-4">
+															<span id="tbx_ve_popover" data-html="true" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="right" data-content="Beispiel: 1 kg">
+																<input type="text" class="form-control" name="tbx_packagingunit" id="tbx_packagingunit" placeholder="Art der VE" maxlength="100">
+															</span>
+														</div>
+													</div>
+												</div>		
+												
+												<div class="row">
+												  	<div class="form-group">
+														<label class="col-sm-4 control-label">Einzelgewicht der VE</label>
+														<div class="col-sm-4">
+															<div class="input-group">
+																<input type="text" class="form-control" name="tbx_weightpackagingunit" id="tbx_weightpackagingunit" placeholder="Einzelgewicht der VE" maxlength="6">
+																<div class="input-group-addon">kg</div>
+															</div>
+														</div>
+													</div>
+												</div>		
+												
+												<div class="row">
+												  	<div class="form-group">
+														<label class="col-sm-4 control-label">Mindesthaltbarkeitsdatum</label>
+														<div class="col-sm-4">
+															<div class="input-group">
+																<input type="text" class="form-control datepicker" name="tbx_mdd" id="tbx_mdd" placeholder="dd.mm.yyyy" maxlength="10">
+																<div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+															</div>
+														</div>
+													</div>
+												</div>		
+												
+												<div class="row">
+												  	<div class="form-group">
+														<label class="col-sm-4 control-label">Einzelpreis</label>
+														<div class="col-sm-4">
+															 <div class="input-group">
+																<input type="text" class="form-control" name="tbx_pricepackagingunit" id="tbx_pricepackagingunit" placeholder="Einzelpreis" maxlength="100">
+																<div class="input-group-addon">€</div>
+															</div>
+														</div>
+													</div>
+												</div>																							
+											</form>											  													
+										
+									  </div>
+									  <div class="modal-footer">
+									  	<div id="newAlertForm"></div>										
+										<button type="button" class="btn btn-default" data-dismiss="modal"> Abbrechen</button>
+										<button type="button" id="btn_savearticle" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save"></span> Speichern</button>								
+
+									  </div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						
+						<!-- Modal Delete -->
+						<div class="modal fade" id="deleteModal" tabindex="-1"
+							role="dialog" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">
+											<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+										</button>
+										<h4 class="modal-title">Wollen Sie den Eintrag wirklich
+											l&ouml;schen?</h4>
+									</div>
+									<div class="modal-body">
+
+										<div class="row modalrow">
+											<div class="col-md-6">
+												<label id="label_name_delete">Bezeichnung</label> 
+											</div>
+											<div class="col-md-6"></div>
+										</div>
+
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default"
+											data-dismiss="modal">Abbrechen</button>
+										<button type="button" id="btn_deleteArticle" class="btn btn-danger">
+											<span class="glyphicon glyphicon-trash"></span> L&ouml;schen
+										</button>
+
+									</div>
+								</div>
+								<!-- /.modal-content -->
+							</div>
+							<!-- /.modal-dialog -->
+						</div>
+						<!-- /.modal -->
+						
+					</div>
+				</div>
+<!-- 				/.tab-content -->
+
+			</div>
+		</div>
+		
+		<div class="row" id="footer">
+			<div class="col-md-3">
+				<button type="button" id="btn_up" class="btn btn-default pull-left centered" style="margin-right: 5px;">
+							<span class="glyphicon glyphicon-arrow-up"></span> Hinauf
+				</button>
+				<button type="button" id="btn_down" class="btn btn-default pull-left centered">
+							<span class="glyphicon glyphicon-arrow-down"></span> Hinab
+				</button>
+			</div>
+			<div class="col-md-6">
+				<form role="form" class="form-inline col-sm-offset-2">
+					<div class="form-group bottom">
+						<button type="button" id="btn_edit" class="btn btn-warning" style="margin: auto;">
+							<span class="glyphicon glyphicon-pencil"></span> Bearbeiten
+						</button>
+						<button type="button" id="btn_deleteModal" class="btn btn-danger" style="margin: auto;">
+							<span class="glyphicon glyphicon-trash"></span> L&ouml;schen
+						</button>
+						<button type="button" id="btn_editDistribution" class="btn btn-default" style="margin: auto;">
+							<span class="glyphicon glyphicon-stats"></span> VE-Verteilung Bearbeiten
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-3">
+				<button type="button" id="btn_submittodepot" class="btn btn-primary pull-right centered helpHotspot" data-toggle="modal" data-target="#submitModal"
+					data-helptext="Hiermit werden alle Wareneing&auml;nge zum Depot hinzugef&uuml;gt und k&ouml;nnen anschließend disponiert werden.">
+					<span class="glyphicon glyphicon-plus"></span> Alles zum Depot hinzufügen
+				</button>
+			</div>
+		</div>
+	</div>	
+	
+	
+	<!-- 	div for showing loading activity -->
+	<div class="spinner-container">
+		<div class="spinner">
+			<div class="circle"></div>
+		</div>
+	</div>
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="../js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-datepicker.min.js"></script>
+    <script src="../js/bootstrap-datepicker.de.min.js"></script>
+	<!-- Load javascript File -->
+	<script src="../js/header.js" type="text/javascript"></script>
+	<!-- include global scripts here -->
+	<script src="../js/jquery.cookie.js" type="text/javascript"></script>
+	<script src="../js/globalFunctions.js" type="text/javascript"></script>
+	<script src="../js/hilfe.js" type="text/javascript"></script>
+	<script src="../js/warenverwaltung_neuerwareneingang.js" type="text/javascript"></script>
+</body>
+</html>

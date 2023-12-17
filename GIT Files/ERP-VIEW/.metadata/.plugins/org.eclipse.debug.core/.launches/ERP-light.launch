@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.ibm.cftools.branding.ui.internal.debug.debugconfigurationtype">
+<intAttribute key="cloudDebugAppInstance" value="0"/>
+<stringAttribute key="cloudDebugAppLaunchId" value="https://api.eu-gb.bluemix.net-admin@view-salzburg.at-admin@view-salzburg.at-dev-erp-light-prod-0"/>
+<stringAttribute key="cloudDebugAppName" value="erp-light-prod"/>
+<intAttribute key="cloudDebugRemoteDebugPort" value="45283"/>
+<stringAttribute key="cloudDebugServer" value="admin@view-salzburg.at_admin@view-salzburg.at_dev@https://api.eu-gb.bluemix.net"/>
+<stringAttribute key="selectedModule" value="ERP-light"/>
+<stringAttribute key="selectedServer" value="IBM Bluemix"/>
+</launchConfiguration>

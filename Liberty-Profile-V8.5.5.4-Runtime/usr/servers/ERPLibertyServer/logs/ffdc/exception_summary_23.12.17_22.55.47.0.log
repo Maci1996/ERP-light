@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1   17.12.23 22:55:45:661 MEZ   17.12.23 22:55:45:661 MEZ java.lang.RuntimeException com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets 530
+                                                                            - C:\Users\Marcus Schneider\Desktop\Bachelor-Projekt\Liberty-Profile-V8.5.5.4-Runtime\usr\servers\ERPLibertyServer\logs\ffdc\ffdc_23.12.17_22.55.45.0.log
+------+------+---------------------------+---------------------------+---------------------------

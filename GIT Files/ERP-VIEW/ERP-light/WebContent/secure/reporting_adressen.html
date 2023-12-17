@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reporting</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!-- Stylesheet -->
+	<link href="../css/reporting.css" rel="stylesheet">
+	<link href="../css/globalStyles.css" rel="stylesheet">
+	<link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico'>
+</head>
+<body>
+	<header id="pageheader">
+	</header>
+	
+	<div class="container-fluid">
+		<div class="row" id="top"></div>
+	
+		<div class="row" id="header">
+			<div class="col-md-12">			
+				<h2>Reporting</h2>
+				
+				<!-- Tabs -->
+				<ul class="nav nav-tabs">
+					<li role="presentation"><a href="reporting_waren.html">Reporting: Warenverwaltung</a></li>
+					<li role="presentation" class="active"><a href="reporting_adressen.html">Reporting: Adressverwaltung</a></li>
+					<li role="presentation"><a href="reporting_admin.html">Reporting: Administration</a></li>
+				</ul>
+				
+			</div>		  
+		</div>
+		
+		<div class="row" id="body">
+			<div class="col-md-12">				
+				
+				<div class="panel-group spacingTop" id="accordionAddressReports" role="tablist" aria-multiselectable="true">
+				
+					<!-- Adressen-Report für alle Personen -->
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordionAddressReports" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Adress-Report für alle Personen und Organisationen
+								</a>
+							</h4>
+						</div>
+						
+						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-10">
+										<p>Dieser Report generiert eine Liste, die folgende Daten enhält:</p>
+										<ul>
+											<li>Privat- und Firmenadressen aller Personen, die Kontaktperson einer Firma sind</li>
+											<li>Privatadressen aller Personen, die keine Kontaktperson einer Firma sind</li>
+											<li>Firmenadressen aller Firmen, die keine Kontaktperson haben</li>
+										</ul>
+									</div>
+									<div class="col-sm-2">
+										<form action="../rest/secure/reports/address/generateAddressReport">
+											<button class="btn btn-primary pull-right" type="submit" id="btn_generateAddressReport">
+												<span class="glyphicon glyphicon-file"></span>
+												 Report erstellen</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- Email-Report für alle Personen -->
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordionAddressReports" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+									Email-Report für alle Personen
+								</a>
+							</h4>
+						</div>
+						
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-10">
+										<p>Dieser Report liefert alle Personen mit ihren Email-Adressen.</p>
+										<p>Bei Kontaktpersonen wird ebenfalls der jeweilige Firmenname angezeigt.</p>
+									</div>
+									<div class="col-sm-2">
+										<form action="../rest/secure/reports/address/generateEmailReport">
+											<button class="btn btn-primary pull-right" type="submit" id="btn_generateAddressReport">
+												<span class="glyphicon glyphicon-file"></span>
+												 Report erstellen</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- Alle Personen exportieren -->
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordionAddressReports" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+									Alle Personen exportieren
+								</a>
+							</h4>
+						</div>
+						
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-10">
+										<p>Dieser Report generiert eine Liste mit den gespeicherten Informationen zu allen Personen.</p>
+									</div>
+									<div class="col-sm-2">
+									<form action="../rest/secure/person/getAllPersonsAsCSV">
+										<button class="btn btn-primary pull-right" type="submit" id="btn_generateAddressReport">
+											<span class="glyphicon glyphicon-file"></span>
+											 alle Personen exportieren</button>
+									</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- Alle Organisationen exportieren -->
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingFour">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordionAddressReports" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+									Alle Organisationen exportieren
+								</a>
+							</h4>
+						</div>
+						
+						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-10">
+										<p>Dieser Report generiert eine Liste mit den gespeicherten Informationen zu allen Organisationen.</p>
+									</div>
+									<div class="col-sm-2">
+									<form action="../rest/secure/organisation/getAllOrganisationsAsCSV">
+										<button class="btn btn-primary pull-right" type="submit" id="btn_generateAddressReport">
+											<span class="glyphicon glyphicon-file"></span>
+											 alle Organisationen exportieren</button>
+									</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="row" id="footer">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+	</div>	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="../js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+	<!-- Load javascript File -->
+	<script src="../js/header.js" type="text/javascript"></script>
+	<!-- include global scripts here -->
+	<script src="../js/globalFunctions.js" type="text/javascript"></script>
+	<script src="../js/reporting_adressen.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+#body{
+	width: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#loggingTable {
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#loggingHeader {
+	margin-top: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+}

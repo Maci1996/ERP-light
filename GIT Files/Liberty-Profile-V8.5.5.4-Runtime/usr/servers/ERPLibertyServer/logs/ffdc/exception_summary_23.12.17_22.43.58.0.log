@@ -1,0 +1,12 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0    346   17.12.23 22:43:56:164 MEZ   17.12.23 22:53:50:260 MEZ java.lang.RuntimeException com.ibm.ws.anno.targets.internal.AnnotationTargetsImpl_Targets 530
+                                                                            - C:\Users\Marcus Schneider\Desktop\Bachelor-Projekt\Liberty-Profile-V8.5.5.4-Runtime\usr\servers\ERPLibertyServer\logs\ffdc\ffdc_23.12.17_22.43.56.0.log
+     1      2   17.12.23 22:44:01:121 MEZ   17.12.23 22:44:13:268 MEZ org.springframework.beans.factory.BeanCreationException com.ibm.ws.webcontainer.servlet.ServletWrapper.init 181
+                                                                            - C:\Users\Marcus Schneider\Desktop\Bachelor-Projekt\Liberty-Profile-V8.5.5.4-Runtime\usr\servers\ERPLibertyServer\logs\ffdc\ffdc_23.12.17_22.44.01.0.log
+     2      1   17.12.23 22:44:13:269 MEZ   17.12.23 22:44:13:269 MEZ javax.servlet.ServletException com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter 82
+                                                                            - C:\Users\Marcus Schneider\Desktop\Bachelor-Projekt\Liberty-Profile-V8.5.5.4-Runtime\usr\servers\ERPLibertyServer\logs\ffdc\ffdc_23.12.17_22.44.13.0.log
+     3      1   17.12.23 22:44:13:297 MEZ   17.12.23 22:44:13:297 MEZ javax.servlet.ServletException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064
+                                                                            - C:\Users\Marcus Schneider\Desktop\Bachelor-Projekt\Liberty-Profile-V8.5.5.4-Runtime\usr\servers\ERPLibertyServer\logs\ffdc\ffdc_23.12.17_22.44.13.1.log
+------+------+---------------------------+---------------------------+---------------------------

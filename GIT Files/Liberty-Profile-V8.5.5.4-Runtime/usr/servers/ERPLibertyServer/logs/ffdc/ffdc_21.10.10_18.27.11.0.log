@@ -1,0 +1,198 @@
+------Start of DE processing------ = [10.10.21 18:27:11:547 MESZ]
+Exception = com.ibm.wsspi.genericbnf.exception.MalformedMessageException
+Source = HttpInboundLink.handleNewInformation
+probeid = 2
+Stack Dump = com.ibm.wsspi.genericbnf.exception.MalformedMessageException: Invalid LF found in token
+	at com.ibm.ws.genericbnf.internal.BNFHeadersImpl.findTokenLength(BNFHeadersImpl.java:3053)
+	at com.ibm.ws.genericbnf.internal.BNFHeadersImpl.parseTokenExtract(BNFHeadersImpl.java:3463)
+	at com.ibm.ws.genericbnf.internal.GenericMessageImpl.parseLine(GenericMessageImpl.java:189)
+	at com.ibm.ws.genericbnf.internal.GenericMessageImpl.parseMessage(GenericMessageImpl.java:323)
+	at com.ibm.ws.http.channel.internal.HttpBaseMessageImpl.parseMessage(HttpBaseMessageImpl.java:2101)
+	at com.ibm.ws.http.channel.internal.HttpServiceContextImpl.parseMessage(HttpServiceContextImpl.java:2525)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewInformation(HttpInboundLink.java:321)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:273)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:254)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:174)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:83)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:929)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1018)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Dump of callerThis
+Object type = com.ibm.ws.http.channel.internal.inbound.HttpInboundLink
+  tc = class com.ibm.websphere.ras.TraceComponent@4aa2117a
+    strings[0] = "TraceComponent[com.ibm.ws.http.channel.internal.inbound.HttpInboundLink,class com.ibm.ws.http.channel.internal.inbound.HttpInboundLink,[HTTPChannel],com.ibm.ws.http.channel.internal.resources.httpchannelmessages,null]"
+  myInterface = class com.ibm.ws.http.channel.internal.inbound.HttpInboundServiceContextImpl@24d917cc
+    strings[0] = "Message parsed: com.ibm.ws.http.channel.internal.HttpRequestMessageImpl@43f85914"
+    strings[1] = "read buffer=PooledWsByteBufferImpl@39e61155/1 ID=1 java.nio.DirectByteBuffer[pos=180 lim=180 cap=8192] [WsByteBufferPool@54f5902a/8192]"
+    strings[2] = "ReadBufferSize=32768"
+    strings[3] = "ReadTimeout=60000"
+    strings[4] = "WriteTimeout=60000"
+    strings[5] = "unparsedDataRemaining=-1"
+  myChannel = class com.ibm.ws.http.channel.internal.inbound.HttpInboundChannel@103ba9b0
+    tc = class com.ibm.websphere.ras.TraceComponent@179e4193
+      strings[0] = "TraceComponent[com.ibm.ws.http.channel.internal.inbound.HttpInboundChannel,class com.ibm.ws.http.channel.internal.inbound.HttpInboundChannel,[HTTPChannel],com.ibm.ws.http.channel.internal.resources.httpchannelmessages,null]"
+    STATE_STOPPED = 0
+    STATE_STOPPING = 1
+    STATE_RUNNING = 2
+    myObjectFactory = class com.ibm.ws.http.channel.internal.HttpObjectFactory@31411d6d
+      tc = class com.ibm.websphere.ras.TraceComponent@78b05b0a
+      SIZE_THREAD = 50
+      SIZE_MAIN = 50
+      reqPool = class com.ibm.wsspi.channelfw.objectpool.TwoTierObjectPool@75fc236c
+      respPool = class com.ibm.wsspi.channelfw.objectpool.TwoTierObjectPool@708decc
+      hdrPool = class com.ibm.wsspi.channelfw.objectpool.TwoTierObjectPool@48eb51d2
+    channelFactory = class com.ibm.ws.http.channel.internal.inbound.HttpInboundChannelFactory@3824dea9
+      myConfig = class com.ibm.ws.http.channel.internal.HttpFactoryConfig@7204464a
+      appInterface = class java.lang.Class@33bb0878
+      devInterfaces = class java.lang.Class[1]
+      myObjectFactory = class com.ibm.ws.http.channel.internal.HttpObjectFactory@31411d6d
+      allowLargeMessage = true
+      key = class com.ibm.ws.http.channel.internal.HttpChannelFactory$1@78170ab8
+      existingChannels = class java.util.HashMap@287125e6
+      commonProperties = class java.util.HashMap@43621058
+    myConfig = class com.ibm.ws.http.channel.internal.HttpChannelConfig@40287d47
+      tc = class com.ibm.websphere.ras.TraceComponent@51861bc5
+      TIMEOUT_MODIFIER = 1000
+      maxPersistRequest = 100
+      outgoingHttpVersion = class com.ibm.wsspi.http.channel.values.VersionValues@4738d6e7
+      bDirectBuffers = true
+      bKeepAliveEnabled = true
+      outgoingHdrBuffSize = 1024
+      incomingHdrBuffSize = 8192
+      incomingBodyBuffSize = 32768
+      persistTimeout = 30000
+      readTimeout = 60000
+      writeTimeout = 60000
+      byteCacheSize = 512
+      bExtractValue = true
+      bBinaryTransport = false
+      accessLogger = class java.util.concurrent.atomic.AtomicReference@66c785f3
+      debugLogger = class com.ibm.ws.http.logging.internal.DisabledLogger@35f4b9a3
+      limitFieldSize = 32768
+      limitNumHeaders = 500
+      limitNumResponses = 10
+      limitMessageSize = -1
+      bAllowRetries = true
+      bServantRegion = false
+      bRunningOnZOS = false
+      bControlRegion = false
+      bHeaderValidation = true
+      bJITOnlyReads = false
+      bStrictURLFormat = false
+      bRemoveServerHeader = false
+      baServerHeaderValue = null
+      lDateHeaderRange = 1000
+      bCookiesConfigureNoCache = true
+      headerChangeLimit = -1
+      bAutoDecompression = true
+      bEnableSmugglingProtection = true
+      v0CookieDateRFC1123compat = true
+    myState = 2
+    config = class com.ibm.ws.channelfw.internal.ChildChannelDataImpl@76fa23fe
+      serialVersionUID = -220865176896833236
+      parent = class com.ibm.ws.channelfw.internal.ChannelDataImpl@355e60eb
+      name = "HTTP-defaultHttpEndpoint_CFINTERNAL_CHILD_0"
+      isInbound = true
+    discriminationProcess = class com.ibm.ws.channelfw.internal.discrim.DiscriminationProcessImpl@4fe9f239
+      tc = class com.ibm.websphere.ras.TraceComponent@61edbddf
+      discriminantClass = class java.lang.Class@7afa5894
+      discriminationAlgorithm = class com.ibm.ws.channelfw.internal.discrim.SingleDiscriminatorAlgorithm@276f729a
+      status = 1
+      STARTED = 1
+      STOPPED = 2
+      indexLock = class java.lang.Object@38253a65
+      masterIndex = 5
+      myIndex = 1
+      name = "HTTP-defaultHttpEndpoint_CFINTERNAL_CHILD_0"
+      discriminators = class com.ibm.ws.channelfw.internal.discrim.DiscriminatorNode@6eda06dc
+      discAL = class java.util.ArrayList@464ccd6b
+      channelList = interface com.ibm.wsspi.channelfw.Channel[1]
+      changed = true
+  myTSC = class com.ibm.ws.tcpchannel.internal.TCPConnLink@4b2ad4bb
+    strings[0] = "TCPConnLink@1261098171: tcpChannel=com.ibm.ws.tcpchannel.internal.NioTCPChannel@10ffa03b"
+    strings[1] = "TCPConnLink@1261098171: closed=false"
+    strings[2] = "TCPConnLink@1261098171: socketIOChannel=com.ibm.ws.tcpchannel.internal.NioSocketIOChannel@ded2193"
+    strings[3] = "NioSocketIOChannel@233644435: closed=false"
+    strings[4] = "NioSocketIOChannel@233644435: processClose=true"
+    strings[5] = "NioSocketIOChannel@233644435: checkCancel=false"
+    strings[6] = "NioSocketIOChannel@233644435: tcpChannel=com.ibm.ws.tcpchannel.internal.NioTCPChannel@10ffa03b"
+    strings[7] = "NioSocketIOChannel@233644435: socket=Socket[addr=/127.0.0.1,port=13528,localport=9080]"
+    strings[8] = "NioSocketIOChannel@233644435: remoteAddr=/127.0.0.1"
+    strings[9] = "NioSocketIOChannel@233644435: remotePort=13528"
+    strings[10] = "NioSocketIOChannel@233644435: localAddr=/127.0.0.1"
+    strings[11] = "NioSocketIOChannel@233644435: localPort=9080"
+    strings[12] = "NioSocketIOChannel@233644435: channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:9080 remote=/127.0.0.1:13528]"
+    strings[13] = "TCPConnLink@1261098171: numReads=1"
+    strings[14] = "TCPConnLink@1261098171: numWrites=0"
+    strings[15] = "TCPConnLink@1261098171: callCompleteLocal=false"
+  bPartialParsedRequest = false
+  numRequestsProcessed = 0
+  filterExceptions = false
+  bIsActive = true
+  appSides = null
+  linkOnDeviceSide = class com.ibm.ws.tcpchannel.internal.TCPConnLink@4b2ad4bb
+  linkOnApplicationSide = null
+  vc = class com.ibm.ws.channelfw.internal.InboundVirtualConnectionImpl@5dc4f41a
+    discStatus = null
+    dp = null
+    tc = class com.ibm.websphere.ras.TraceComponent@3b3ea4d6
+      strings[0] = "TraceComponent[com.ibm.ws.channelfw.internal.VirtualConnectionImpl,class com.ibm.ws.channelfw.internal.VirtualConnectionImpl,[ChannelFramework],com.ibm.ws.channelfw.internal.resources.ChannelfwMessages,null]"
+    ONE_MILLISECOND_IN_NANOSECONDS = 1000000
+    stateStore = class java.util.HashMap@75a50dbc
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[16]
+      entrySet = null
+      size = 5
+      modCount = 5
+      threshold = 12
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    READ_PENDING = 4097
+    READ_WAITING = 4098
+    READ_FINISHING = 4100
+    WRITE_PENDING = 4112
+    WRITE_WAITING = 4128
+    WRITE_FINISHING = 4160
+    CLOSE_PENDING = 4352
+    IN_USE_MASK = 4096
+    IN_USE_MASK_CLEAR_OUT = -4097
+    READ_PENDING_CLEAR_OUT = -7
+    READ_FINISHING_CLEAR_OUT = -4
+    READ_WAITING_CLEAR_OUT = -6
+    READ_DONE_CLEAR_OUT = -8
+    WRITE_PENDING_CLEAR_OUT = -97
+    WRITE_FINISHING_CLEAR_OUT = -49
+    WRITE_WAITING_CLEAR_OUT = -81
+    WRITE_DONE_CLEAR_OUT = -113
+    CLOSE_NOT_ALLOWED_MASK = 341
+    FINISH_NOT_ALLOWED_MASK = 256
+    READ_NOT_ALLOWED_MASK = 263
+    WRITE_NOT_ALLOWED_MASK = 368
+    READ_OUTSTANDING = 7
+    WRITE_OUTSTANDING = 112
+    closeWaiting = false
+    currentState = 0
+    readOutWithClosePending = false
+    writeOutWithClosePending = false
+    inetAddressingValid = true
+    connDesc = class com.ibm.ws.channelfw.internal.ConnectionDescriptorImpl@755d410b
+      remoteHostName = null
+      localHostName = null
+      remoteHostAddress = null
+      localHostAddress = null
+      addrLocal = class java.net.Inet4Address@539015c3
+      addrRemote = class java.net.Inet4Address@3ba935fa
+    fileChannelCapable = 2
+

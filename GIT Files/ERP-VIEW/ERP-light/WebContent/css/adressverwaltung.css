@@ -1,0 +1,96 @@
+@CHARSET "UTF-8";
+
+
+.modalContentPerson{
+	width: 670px;
+  	margin-left: -35px;
+}
+
+.modalContentOrganisation{
+	width: 710px;
+  	margin-left: -55px;
+}
+
+/* Nav-tabs */
+.nav-tabs > li > a {	
+	color: #333; /*Change active text color here*/
+}
+
+/* active tab color */
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  color: #FFF;
+  background-color: #45A12B;
+  
+}
+
+/* hover tab color */
+.nav-tabs>li>a:hover {
+  background-color: #45A12B;
+  color: #FFF;
+}
+
+.suchfilter{
+	width: 250px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.typfilter{
+    margin-right: 5px;
+}
+
+/* Table */
+.TableHead{	
+	background-color: #999;
+}
+
+.table-responsive {
+    overflow: scroll;
+	overflow-x: auto;
+	/* calculates the table height subtracting 270px from 100% of the viewport */
+	height: calc(100vh - 270px);	/* 100vh ... 100% of the viewport */
+	min-height: 300px;	/* use 300px min height for table */
+	border: 1px solid #999;
+}
+
+.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th {
+  background-color: #45A12B;
+  color: #FFF;
+}
+
+.table-striped tbody tr.highlight td { 
+    background-color: #45A12B;
+	color: #FFF;
+}
+/* Table end */
+
+.bottom{
+    margin-top: 5px;	
+}
+
+.centered{
+    margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modalrow{
+	margin-bottom: 5px;	
+}
+
+
+
+.ModalDivContainer{
+	height: 80px;
+	overflow-y: auto;
+}
+
+.boxElement_person{
+	border-bottom: 1px solid #ccc;
+}
+
+.boxElement_category{
+	border-bottom: 1px solid #ccc;
+}

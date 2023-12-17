@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        version="2.5"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+   <display-name>ERP-light VIEW</display-name>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/erp-light-servlet.xml</param-value> 
+	</context-param>
+
+   <servlet>
+      <servlet-name>erp-light</servlet-name>
+      <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+
+   <servlet-mapping>
+      <servlet-name>erp-light</servlet-name>
+      <url-pattern>/rest/*</url-pattern>
+   </servlet-mapping>
+   
+	<filter>
+	   <filter-name>SecurityFilter</filter-name>
+	   <filter-class>at.erp.light.view.filter.SecurityFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	   <filter-name>SecurityFilter</filter-name>
+	   <url-pattern>/secure/*</url-pattern>
+	   <url-pattern>/rest/secure/*</url-pattern>
+	</filter-mapping>
+	
+	<listener>
+		<listener-class>at.erp.light.view.listener.HttpSessionCollector</listener-class>
+	</listener>
+ 
+</web-app>

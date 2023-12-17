@@ -1,0 +1,106 @@
+Di Mär 13 2018 04:21:27 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Mär 13 2018 04:40:01 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { erp-test [:external:erp-test/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Mär 13 2018 04:40:02 PM - ClientRequestFactory.deleteApplication(...): appName:erp-test
+Di Mär 13 2018 04:40:03 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Mär 13 2018 05:01:38 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Mär 13 2018 05:01:41 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Mär 13 2018 05:03:15 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light-test [:external:ERP-light-test/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Mär 13 2018 05:03:15 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Mär 13 2018 05:03:15 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Mär 13 2018 05:13:28 PM - CloudFoundryServerBehaviour.publishModule(...): CHANGED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Mär 13 2018 05:15:30 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Mär 13 2018 05:15:30 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light-test [:external:ERP-light-test/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Mär 13 2018 05:19:50 PM - CloudFoundryServerBehaviour.publishModule(...): CHANGED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Mär 13 2018 05:21:53 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Mär 13 2018 05:21:53 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light-test [:external:ERP-light-test/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 04:51:37 PM - CloudFoundryServerBehaviour.publishModule(...): CHANGED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 04:51:38 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 04:51:38 PM - CloudFoundryServerBehaviour.publishModule(...): REMOVED { ERP-light-test [:external:ERP-light-test/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 04:52:24 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 04:52:24 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 04:52:42 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 04:52:42 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 04:53:35 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 04:53:35 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 04:56:45 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 04:56:45 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 04:57:03 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 04:57:03 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 04:58:08 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 04:58:08 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 04:58:44 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 04:58:44 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 05:10:29 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { erp-light-test [:external:erp-light-test/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 05:10:29 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 05:10:29 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 05:10:29 PM - CloudFoundryServerBehaviour.publishModule(...): REMOVED { spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 05:11:03 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 05:25:55 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [:external:ERP-light/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 05:26:19 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 05:26:57 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 05:27:06 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 05:27:46 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 05:28:01 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 05:28:05 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 05:28:33 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 06:22:17 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:28:35 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 06:28:35 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:28:42 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:30:12 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 06:30:12 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:30:22 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:30:40 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 06:43:46 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:43:52 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 06:44:36 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 06:44:36 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:44:40 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:45:07 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 06:48:48 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:49:42 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 06:49:42 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:49:50 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:50:07 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 06:56:48 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 06:56:48 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 07:14:51 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:14:51 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 07:14:51 PM - CloudFoundryServerBehaviour.publishModule(...): REMOVED { spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 07:16:00 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:21:01 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 07:21:01 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:21:05 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:21:27 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 07:22:09 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:22:09 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 07:28:17 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:28:17 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 07:28:25 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:36:02 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 07:36:03 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:36:09 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:36:19 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 07:43:04 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:46:59 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 07:47:35 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:47:35 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 07:51:53 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:51:53 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 07:58:20 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 07:58:41 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 07:59:14 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 08:02:04 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 08:02:04 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 08:02:26 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 08:03:01 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: {}
+Di Apr 17 2018 08:03:01 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 08:03:10 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 08:07:44 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 08:46:34 PM - CloudFoundryServer.modifyModules(...): add: {} remove: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 08:46:34 PM - CloudFoundryServerBehaviour.publishModule(...): REMOVED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 08:46:34 PM - CloudFoundryServerBehaviour.publishModule(...): REMOVED { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 08:46:34 PM - CloudFoundryServerBehaviour.publishModule(...): REMOVED { spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
+Di Apr 17 2018 08:51:02 PM - CloudFoundryServer.modifyModules(...): add: { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]} remove: { erp-light-prod [:external:erp-light-prod/org.eclipse.cft.server.core.CloudFoundryApplicationModule]}
+Di Apr 17 2018 09:03:53 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web]}
+Di Apr 17 2018 09:03:53 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { ERP-light [org.eclipse.jst.jee.server:ERP-light/jst.web], spring-web-4.1.1.RELEASE.jar [org.eclipse.jst.jee.server:/binary:D:\ERP-VIEW\ERP-light\WebContent\WEB-INF\lib\spring-web-4.1.1.RELEASE.jar/jst.webfragment]}
